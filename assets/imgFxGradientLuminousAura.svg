@@ -1,0 +1,11 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="330" height="330" viewBox="0 0 330 330" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle id="FX / gradient luminous aura" cx="165" cy="165" r="165" fill="url(#paint0_radial_0_9)"/>
+<defs>
+<radialGradient id="paint0_radial_0_9" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(166.988 167.2) scale(198.795 220)">
+<stop stop-color="#D7EAFE" stop-opacity="0.63"/>
+<stop offset="0.333333" stop-color="#679BC7" stop-opacity="0.37"/>
+<stop offset="0.666667" stop-color="#144B8C" stop-opacity="0.14"/>
+<stop offset="1" stop-color="#041022" stop-opacity="0"/>
+</radialGradient>
+</defs>
+</svg>

@@ -1,24 +1,32 @@
 const trackButtons = document.querySelectorAll(".track-button");
-const navLinks = document.querySelectorAll(".nav-link");
 const statusMessage = document.querySelector(".status-message");
+const toast = document.querySelector(".toast");
+let toastTimer;
+
+function showToast(message) {
+  toast.textContent = message;
+  toast.classList.add("is-visible");
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => toast.classList.remove("is-visible"), 2600);
+}
 
 trackButtons.forEach((button) => {
   button.addEventListener("click", () => {
-    trackButtons.forEach((track) => track.setAttribute("aria-pressed", "false"));
-    button.setAttribute("aria-pressed", "true");
-    const title = button.querySelector(".track-title").textContent;
-    statusMessage.textContent = `Now playing ${title}`;
+    trackButtons.forEach((track) => track.setAttribute("aria-pressed", String(track === button)));
+    statusMessage.textContent = `Selected ${button.querySelector(".track-title").textContent}`;
   });
 });
 
-navLinks.forEach((button) => {
+document.querySelectorAll(".more-button").forEach((button) => {
   button.addEventListener("click", () => {
-    navLinks.forEach((link) => {
-      link.classList.remove("is-active");
-      link.setAttribute("aria-pressed", "false");
-    });
-    button.classList.add("is-active");
-    button.setAttribute("aria-pressed", "true");
-    statusMessage.textContent = `${button.textContent} selected`;
+    const track = button.closest(".track");
+    const title = track.querySelector(".track-title").textContent;
+    const artist = track.querySelector(".track-artist").textContent;
+    const query = encodeURIComponent(`${title} ${artist}`);
+    window.location.href = `https://open.spotify.com/search/${query}`;
   });
+});
+
+document.querySelectorAll("[data-artist]").forEach((button) => {
+  button.addEventListener("click", () => showToast(`#${button.dataset.rank} — ${button.dataset.artist}`));
 });
