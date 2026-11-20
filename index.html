@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#030713">
+  <title>LOUD — Monthly Mix</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="mix-page">
+    <header class="intro">
+      <div class="brand-rule" aria-hidden="true"><span></span></div>
+      <p class="eyebrow">LOUD / MONTHLY REPLAY</p>
+      <h1>Your Mix.</h1>
+      <p class="subtitle">The songs that shaped November.</p>
+    </header>
+
+    <section class="cover" aria-label="November monthly mix artwork">
+      <div class="cover-sheen" aria-hidden="true"></div>
+      <div class="cover-rings" aria-hidden="true">
+        <span class="ring ring-one"></span>
+        <span class="ring ring-two"></span>
+        <span class="ring ring-three"></span>
+        <span class="ring ring-four"></span>
+      </div>
+      <span class="cover-logo"><img src="assets/loud-logo.png" alt="LOUD"></span>
+      <div class="cover-caption">
+        <p class="cover-date">11 / 26</p>
+        <p class="cover-subtitle">THE MONTHLY MIX</p>
+      </div>
+    </section>
+
+    <section class="tracks" aria-labelledby="tracks-heading">
+      <h2 id="tracks-heading">Your top tracks</h2>
+      <ol class="track-list">
+        <li class="track">
+          <button class="track-button" type="button" aria-pressed="false" aria-label="Play Chemical by Post Malon">
+            <span class="track-art" aria-hidden="true"><img src="assets/chemical.png" alt=""></span>
+            <span class="track-copy"><span class="track-title">Chemical</span><span class="track-artist">Post Malon</span></span>
+            <span class="track-number">01</span>
+          </button>
+          <button class="more-button" type="button" aria-label="More options for Chemical">···</button>
+        </li>
+        <li class="track">
+          <button class="track-button" type="button" aria-pressed="false" aria-label="Play Save Your Tears by The Weekend">
+            <span class="track-art" aria-hidden="true"><img src="assets/save-your-tears.png" alt=""></span>
+            <span class="track-copy"><span class="track-title">Save Your Tears</span><span class="track-artist">The Weekend</span></span>
+            <span class="track-number">02</span>
+          </button>
+          <button class="more-button" type="button" aria-label="More options for Save Your Tears">···</button>
+        </li>
+        <li class="track">
+          <button class="track-button" type="button" aria-pressed="false" aria-label="Play Cartier Santos by SDM">
+            <span class="track-art" aria-hidden="true"><img src="assets/cartier-santos.png" alt=""></span>
+            <span class="track-copy"><span class="track-title">Cartier Santos</span><span class="track-artist">SDM</span></span>
+            <span class="track-number">03</span>
+          </button>
+          <button class="more-button" type="button" aria-label="More options for Cartier Santos">···</button>
+        </li>
+        <li class="track">
+          <button class="track-button" type="button" aria-pressed="false" aria-label="Play Lover Girl by Meghann Thee Stallion">
+            <span class="track-art" aria-hidden="true"><img src="assets/lover-girl.png" alt=""></span>
+            <span class="track-copy"><span class="track-title">Lover Girl</span><span class="track-artist">Meghann Thee Stallion</span></span>
+            <span class="track-number">04</span>
+          </button>
+          <button class="more-button" type="button" aria-label="More options for Lover Girl">···</button>
+        </li>
+      </ol>
+    </section>
+
+    <nav class="bottom-nav" aria-label="Main navigation">
+      <button type="button" class="nav-link" aria-pressed="false">Home</button>
+      <button type="button" class="nav-link is-active" aria-pressed="true">DNA</button>
+      <button type="button" class="nav-link" aria-pressed="false">Library</button>
+    </nav>
+    <p class="status-message" aria-live="polite"></p>
+  </main>
+</body>
+</html>
