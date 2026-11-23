@@ -9,7 +9,7 @@
   <script src="script.js" defer></script>
 <link rel="stylesheet" href="../navigation.css"></head>
 <body>
-  <main class="app">
+  <main class="app loud-screen">
     <header>
       <div class="top-line" aria-hidden="true"></div>
       <p class="eyebrow">LOUD / QUEUE</p>
@@ -53,12 +53,15 @@
       <button id="autoplay" class="switch" role="switch" aria-checked="true" aria-label="Autoplay"><span></span></button>
     </div>
     <div class="screen-links"><a href="../audio-settings/index.html">Audio Settings</a></div>
-    <nav class="navigation" aria-label="Main navigation">
-      <a class="nav-link" href="../index.html">Home</a>
-      <a class="nav-link" href="../playlist.html" aria-current="location">Playlist</a>
-      <a class="nav-link" href="../library/index.html">Library</a>
+    <nav class="loud-menu" aria-label="Main navigation">
+      <a href="../index.html">Home</a>
+      <a href="../playlist.html">Playlist</a>
+      <a href="../library/index.html">Library</a>
+      <a href="../artist.html">Your #1 Artist</a>
+      <a href="../deep-cuts.html">The Deep Cuts</a>
+      <a href="index.html" aria-current="page">Queue</a>
+      <a href="../audio-settings/index.html">Audio Settings</a>
     </nav>
-    <div class="home-indicator" aria-hidden="true"></div>
     <p class="sr-only" role="status" id="status"></p>
     <div class="toast" id="toast" hidden></div>
   </main>

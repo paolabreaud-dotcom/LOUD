@@ -8,55 +8,9 @@
   <link rel="stylesheet" href="home/style.css">
   <script src="home/script.js" defer></script>
   <link rel="stylesheet" href="navigation.css">
-  <style>
-    .home .home-menu {
-      grid-template-columns: repeat(6, minmax(0, 1fr));
-      gap: 6px;
-      padding: 8px;
-      margin-top: auto;
-      border-radius: 22px;
-    }
-
-    .home .home-menu a.nav-link {
-      grid-column: span 2;
-      place-items: center;
-      min-height: 38px;
-      padding: 4px;
-      border-radius: 12px;
-      background: #ffffff0a;
-      color: #bed2f5;
-      font-size: 11px;
-      line-height: 1.25;
-      text-align: center;
-      text-transform: none;
-    }
-
-    .home .home-menu a.nav-link:nth-child(n + 4) {
-      grid-column: span 3;
-    }
-
-    .home .home-menu a.nav-link[aria-current] {
-      background: #5b8fff35;
-      color: #f3f7ff;
-      box-shadow: inset 0 0 0 1px #5b8fff;
-    }
-
-    .home .home-menu a.nav-link[aria-current]::after {
-      content: none;
-    }
-
-    .home .home-menu a.nav-link:hover {
-      background: #5b8fff45;
-      color: #f3f7ff;
-    }
-
-    .home .recommendations {
-      margin-bottom: 16px;
-    }
-  </style>
 </head>
 <body>
-  <main class="home">
+  <main class="home loud-screen">
     <header class="intro">
       <div class="brand-rule" aria-hidden="true"></div>
       <p class="eyebrow">LOUD / HOME</p>
@@ -111,14 +65,14 @@
       </div>
     </section>
 
-    <nav class="navigation home-menu" aria-label="Main navigation">
-      <a class="nav-link" href="index.html" aria-current="page">Home</a>
-      <a class="nav-link" href="playlist.html">Playlist</a>
-      <a class="nav-link" href="library/index.html">Library</a>
-      <a class="nav-link" href="artist.html">Your #1 Artist</a>
-      <a class="nav-link" href="deep-cuts.html">The Deep Cuts</a>
-      <a class="nav-link" href="queue/index.html">Queue</a>
-      <a class="nav-link" href="audio-settings/index.html">Audio Settings</a>
+    <nav class="loud-menu" aria-label="Main navigation">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="playlist.html">Playlist</a>
+      <a href="library/index.html">Library</a>
+      <a href="artist.html">Your #1 Artist</a>
+      <a href="deep-cuts.html">The Deep Cuts</a>
+      <a href="queue/index.html">Queue</a>
+      <a href="audio-settings/index.html">Audio Settings</a>
     </nav>
   </main>
 </body>
