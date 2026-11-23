@@ -1,17 +1,15 @@
 # LOUD
 
-Ouvre le dossier **LOUD** dans VS Code avec **File → Open Folder**, puis ouvre **index.html** dans ton navigateur ou avec Live Server. Les pages et leurs visuels se chargent localement.
+Ouvre ce dossier dans VS Code, puis ouvre `index.html` dans ton navigateur. Aucune installation n’est nécessaire.
 
-| Menu | Écran | Fichier |
-| --- | --- | --- |
-| Home | Your #1 Artist | `artist.html` |
-| Playlist | Your Mix | `index.html` |
-| Library | The Deep Cuts | `deep-cuts.html` |
+- **Home** ouvre l’accueil à la racine du site.
+- **Playlist** ouvre Your Mix et donne accès à Your #1 Artist et The Deep Cuts, ainsi qu’à Queue et Audio Settings.
+- **Library** ouvre Your Collection avec les filtres Playlists, Tracks et Artists.
 
-La sélection d’un morceau est interactive. Le bouton « ··· » ouvre la recherche Spotify correspondante. Un clic sur un portrait dans The Deep Cuts affiche le nom et le rang de l’artiste. Le projet est un prototype d’interface sans lecture audio intégrée.
+La navigation interne utilise des chemins relatifs pour fonctionner en local et sur GitHub Pages. Les liens Spotify s’ouvrent sur le service externe.
 
-## Rendu
+## Publier sur le dépôt existant
 
-- **PROMPTS.md** contient les consignes d’intégration et de correction.
-- Le dossier **maquettes**, à côté de **LOUD** dans l’archive, contient les trois références PNG Figma en 390 × 844 px.
-- Le dossier **LOUD** contient déjà un dépôt Git local sur la branche **main**. Dans GitHub Desktop, utilise **File → Add Local Repository**, puis sélectionne ce dossier. L’historique comporte le dépôt des fichiers puis l’intégration des pages.
+Dans GitHub Desktop, ouvre le dépôt LOUD, puis fais **Repository → Show in Explorer**. Décompresse le ZIP et copie le **contenu** de `LOUD_Complet` dans le dossier du dépôt LOUD, à côté du dossier `.git`. Accepte le remplacement des fichiers portant le même nom. Dans GitHub Desktop, vérifie les changements, puis fais **Commit to main → Push origin**.
+
+Queue simule la lecture. Audio Settings mémorise les préférences dans le navigateur.

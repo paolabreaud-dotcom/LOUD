@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#070d1f">
+  <title>LOUD — Your Collection</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="../navigation.css">
+</head>
+<body>
+  <main class="library">
+    <header class="intro">
+      <div class="brand-rule" aria-hidden="true"></div>
+      <p class="eyebrow">LOUD / LIBRARY</p>
+      <h1>Your Collection.</h1>
+      <p class="subtitle">All the music you kept close.</p>
+    </header>
+    <div class="filters" role="group" aria-label="Filter your library" hidden>
+      <button class="eyebrow" type="button" data-filter="playlists" aria-controls="playlists" aria-pressed="true">Playlists</button>
+      <button class="eyebrow" type="button" data-filter="tracks" aria-controls="tracks" aria-pressed="false">Tracks</button>
+      <button class="eyebrow" type="button" data-filter="artists" aria-controls="artists" aria-pressed="false">Artists</button>
+    </div>
+    <div class="collection">
+      <section id="playlists">
+        <button class="feature" type="button" data-preview="On Repeat" data-details="Featured playlist · 4 tracks">
+          <span class="mosaic" aria-hidden="true">
+            <img src="assets/cover-1.png" alt="">
+            <img src="assets/cover-2.png" alt="">
+            <img src="assets/cover-3.png" alt="">
+            <img src="assets/cover-4.png" alt="">
+          </span>
+          <span class="feature-copy">
+            <span class="eyebrow">Featured playlist</span>
+            <strong>ON REPEAT</strong>
+            <span class="feature-description">The tracks you keep coming back to.</span>
+          </span>
+          <img class="feature-arrow" src="assets/open.svg" width="17" height="17" alt="">
+        </button>
+        <section class="saved" aria-labelledby="saved-title">
+          <h2 id="saved-title" class="eyebrow">Saved playlists</h2>
+          <ul class="rows">
+            <li><button class="row" type="button" data-preview="Liked Songs" data-details="24 tracks">
+              <img class="row-cover" src="assets/cover-4.png" width="48" height="48" alt="">
+              <span class="row-copy">
+                <strong>Liked Songs</strong><small>24 tracks</small>
+                <img class="row-arrow" src="assets/chevron.svg" width="18" height="18" alt="">
+              </span>
+            </button></li>
+            <li><button class="row" type="button" data-preview="Late Night Drive" data-details="16 tracks">
+              <img class="row-cover" src="assets/cover-2.png" width="48" height="48" alt="">
+              <span class="row-copy">
+                <strong>Late Night Drive</strong><small>16 tracks</small>
+                <img class="row-arrow" src="assets/chevron.svg" width="18" height="18" alt="">
+              </span>
+            </button></li>
+            <li><a class="row" href="../playlist.html">
+              <img class="row-cover" src="assets/cover-3.png" width="48" height="48" alt="">
+              <span class="row-copy">
+                <strong>November Mix</strong><small>4 tracks</small>
+                <img class="row-arrow" src="assets/chevron.svg" width="18" height="18" alt="">
+              </span>
+            </a></li>
+          </ul>
+        </section>
+      </section>
+      <section id="tracks" aria-labelledby="tracks-title" hidden>
+        <h2 class="eyebrow" id="tracks-title">Saved tracks</h2>
+        <ul class="rows">
+            <li><a class="row" href="https://open.spotify.com/search/Chemical%20Post%20Malone">
+              <img class="row-cover" src="assets/cover-1.png" width="48" height="48" alt="">
+              <span class="row-copy">
+                <strong>Chemical</strong><small>Post Malone</small>
+                <img class="row-arrow" src="assets/chevron.svg" width="18" height="18" alt="">
+              </span>
+            </a></li>
+            <li><a class="row" href="https://open.spotify.com/search/Save%20Your%20Tears%20The%20Weeknd">
+              <img class="row-cover" src="assets/cover-2.png" width="48" height="48" alt="">
+              <span class="row-copy">
+                <strong>Save Your Tears</strong><small>The Weeknd</small>
+                <img class="row-arrow" src="assets/chevron.svg" width="18" height="18" alt="">
+              </span>
+            </a></li>
+            <li><a class="row" href="https://open.spotify.com/search/Cartier%20Santos%20SDM">
+              <img class="row-cover" src="assets/cover-3.png" width="48" height="48" alt="">
+              <span class="row-copy">
+                <strong>Cartier Santos</strong><small>SDM</small>
+                <img class="row-arrow" src="assets/chevron.svg" width="18" height="18" alt="">
+              </span>
+            </a></li>
+            <li><a class="row" href="https://open.spotify.com/search/Lover%20Girl%20Megan%20Thee%20Stallion">
+              <img class="row-cover" src="assets/cover-4.png" width="48" height="48" alt="">
+              <span class="row-copy">
+                <strong>Lover Girl</strong><small>Megan Thee Stallion</small>
+                <img class="row-arrow" src="assets/chevron.svg" width="18" height="18" alt="">
+              </span>
+            </a></li>
+        </ul>
+      </section>
+      <section id="artists" aria-labelledby="artists-title" hidden>
+        <h2 class="eyebrow" id="artists-title">Saved artists</h2>
+        <ul class="rows">
+            <li><a class="row" href="../artist.html">
+              <img class="row-cover" src="assets/cover-1.png" width="48" height="48" alt="">
+              <span class="row-copy">
+                <strong>Post Malone</strong><small>Artist</small>
+                <img class="row-arrow" src="assets/chevron.svg" width="18" height="18" alt="">
+              </span>
+            </a></li>
+            <li><a class="row" href="../deep-cuts.html">
+              <img class="row-cover" src="assets/cover-2.png" width="48" height="48" alt="">
+              <span class="row-copy">
+                <strong>The Weeknd</strong><small>Artist</small>
+                <img class="row-arrow" src="assets/chevron.svg" width="18" height="18" alt="">
+              </span>
+            </a></li>
+            <li><a class="row" href="https://open.spotify.com/search/SDM">
+              <img class="row-cover" src="assets/cover-3.png" width="48" height="48" alt="">
+              <span class="row-copy">
+                <strong>SDM</strong><small>Artist</small>
+                <img class="row-arrow" src="assets/chevron.svg" width="18" height="18" alt="">
+              </span>
+            </a></li>
+            <li><a class="row" href="https://open.spotify.com/search/Megan%20Thee%20Stallion">
+              <img class="row-cover" src="assets/cover-4.png" width="48" height="48" alt="">
+              <span class="row-copy">
+                <strong>Megan Thee Stallion</strong><small>Artist</small>
+                <img class="row-arrow" src="assets/chevron.svg" width="18" height="18" alt="">
+              </span>
+            </a></li>
+        </ul>
+      </section>
+
+    </div>
+    <nav class="navigation" aria-label="Main navigation">
+      <a class="nav-link" href="../index.html">Home</a>
+      <a class="nav-link" href="../playlist.html">Playlist</a>
+      <a class="nav-link" href="index.html" aria-current="page">Library</a>
+    </nav>
+  </main>
+  <dialog aria-labelledby="preview-title">
+    <h2 id="preview-title"></h2>
+    <p id="preview-details"></p>
+    <form method="dialog"><button>Close</button></form>
+  </dialog>
+</body>
+</html>

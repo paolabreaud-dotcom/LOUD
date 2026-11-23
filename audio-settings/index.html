@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#101e31"><title>LOUD — Audio Settings</title><link rel="stylesheet" href="assets/base.css"><link rel="stylesheet" href="style.css"><script src="script.js" defer></script><link rel="stylesheet" href="../navigation.css"></head>
+<body><main class="app">
+<header><div class="top-line" aria-hidden="true"></div><p class="eyebrow">LOUD / YOUR SOUND, YOUR RULES</p><div class="heading"><a class="back icon" href="../queue/index.html" aria-label="Back to queue">‹</a><h1>AUDIO SETTINGS</h1></div><p class="subtitle">Your sound. Down to the last detail.</p></header>
+<section class="sound-card" aria-labelledby="sound-title"><div class="orbit" aria-hidden="true"><span></span><span></span><span></span><span></span><b>LOUD</b></div><div><p class="playing-label">MAKE IT YOUR SOUND</p><h2 id="sound-title">Find your<br>frequency.</h2><p>Sound that feels like you.</p></div></section>
+<form id="settings">
+<section class="panel" aria-labelledby="eq-title"><div class="section-heading"><h2 id="eq-title">EQUALIZER</h2><button type="button" id="eq-switch" class="switch" role="switch" aria-checked="true" aria-label="Equalizer"><span></span></button></div><p class="hint">Fine-tune every frequency your way.</p>
+<label class="sr-only" for="preset">Sound profile</label><select id="preset"><option value="balanced">Balanced</option><option value="bass">Deep bass</option><option value="vocal">Clear vocals</option><option value="night">Late night</option><option value="custom">Custom</option></select>
+<div class="equalizer-area"><div class="eq-grid" aria-hidden="true"><span>+6</span><span>0</span><span>−6</span></div><fieldset id="bands"><legend class="sr-only">Frequency bands</legend></fieldset></div><p class="eq-caption">BASS <span>MIDS</span> TREBLE</p></section>
+<section class="panel quality" aria-labelledby="quality-title"><h2 id="quality-title">AUDIO QUALITY</h2><p class="hint">Choose the detail level of your listening experience.</p><label for="quality">Streaming <select id="quality"><option value="standard">Standard · 128 kb/s</option><option value="high">High · 256 kb/s</option><option value="very-high">Very high · 320 kb/s</option></select></label><p class="small-note">Higher quality uses more data.</p><div class="setting-row"><div><strong>Normalize volume</strong><p>Keep the volume consistent across tracks.</p></div><button type="button" id="normalize" class="switch" role="switch" aria-checked="true" aria-label="Normalize volume"><span></span></button></div></section>
+<section class="panel" aria-labelledby="transition-title"><h2 id="transition-title">TRANSITIONS</h2><div class="setting-row"><div><strong>Gapless playback</strong><p>Keep tracks flowing without added silence.</p></div><button type="button" id="gapless" class="switch" role="switch" aria-checked="true" aria-label="Gapless playback"><span></span></button></div><div class="fade-label"><label for="crossfade">Crossfade</label><output id="fade-value" for="crossfade">4 s</output></div><input type="range" id="crossfade" min="0" max="12" value="4"><div class="range-labels"><span>Off</span><span>12 s</span></div></section>
+<p class="demo-note">These settings customize the demo. Connect them to your player to process audio.</p><button type="button" id="reset" class="reset">Restore default settings</button>
+</form><nav class="navigation" aria-label="Main navigation">
+      <a class="nav-link" href="../index.html">Home</a>
+      <a class="nav-link" href="../playlist.html" aria-current="location">Playlist</a>
+      <a class="nav-link" href="../library/index.html">Library</a>
+    </nav>
+<div class="home-indicator" aria-hidden="true"></div><p id="status" role="status" class="save-status">Settings saved on this device.</p>
+</main></body></html>

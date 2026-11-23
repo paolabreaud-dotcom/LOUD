@@ -11,3 +11,7 @@
 ## Corrections
 
 > Remplace les fichiers d’images introuvables de Your Mix par les quatre pochettes de la maquette Figma. Reprends ses halos et ses orbites exportés. Corrige les graphies Post Malone, The Weeknd et Megan Thee Stallion. Remplace le statut « Now playing » par une indication de sélection. Vérifie les chemins des images, les liens entre les trois pages et la syntaxe JavaScript.
+
+## Intégration de l’application
+
+> Réunis les écrans Home, Your Mix, Your #1 Artist, The Deep Cuts et Library dans le dépôt LOUD. Place le nouvel accueil à la racine. Utilise la même barre Home / Playlist / Library sur chaque écran, indique l’onglet actif et ajoute des liens depuis Your Mix vers les deux écrans artistes. Utilise des chemins relatifs pour que la navigation fonctionne aussi en local.

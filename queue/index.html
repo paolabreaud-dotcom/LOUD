@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101e31">
+  <title>LOUD — Queue</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+<link rel="stylesheet" href="../navigation.css"></head>
+<body>
+  <main class="app">
+    <header>
+      <div class="top-line" aria-hidden="true"></div>
+      <p class="eyebrow">LOUD / QUEUE</p>
+      <div class="heading">
+        <a class="icon back" href="../playlist.html" aria-label="Back to playlist">‹</a>
+        <h1>QUEUE</h1>
+        <button class="icon" id="more" aria-label="Options" aria-expanded="false" aria-controls="options">•••</button>
+      </div>
+      <div id="options" class="options" hidden><button id="reset">Restore original queue</button></div>
+      <p class="subtitle">Keep the sound going. Your way.</p>
+    </header>
+
+    <section class="player" aria-label="Now playing">
+      <img id="current-cover" class="current-cover" src="assets/chemical.jpg" alt="Chemical cover art">
+      <div class="current-info">
+        <p class="playing-label">NOW PLAYING</p>
+        <h2 id="current-title">Chemical</h2>
+        <p id="current-artist">Post Malone</p>
+        <div class="controls">
+          <div class="equalizer" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+          <button id="play" class="chrome play" aria-label="Pause" aria-pressed="true"><span>Ⅱ</span></button>
+        </div>
+      </div>
+      <div class="timeline">
+        <label class="sr-only" for="progress">Track position (demo)</label>
+        <input id="progress" type="range" min="0" max="184" value="72">
+        <div class="times"><span id="elapsed">1:12</span><span id="duration">3:04</span></div>
+      </div>
+    </section>
+
+    <section class="queue" aria-labelledby="queue-title">
+      <div class="queue-heading"><h2 id="queue-title">UP NEXT</h2><button id="clear">Clear</button></div>
+      <p class="queue-source">From your playlist • YOUR MIX</p>
+      <ul id="tracks" aria-label="Upcoming tracks"></ul>
+      <p id="empty" hidden>Your queue is empty.</p>
+    </section>
+
+    <div class="autoplay">
+      <svg width="25" height="25" viewBox="0 0 30 30" fill="none" aria-hidden="true"><circle cx="14" cy="15" r="12" stroke="currentColor"/><path d="M7 16q4-10 8 0t8 0" stroke="currentColor"/></svg>
+      <div><strong>Autoplay</strong><p>Keep the music going when your queue ends.</p></div>
+      <button id="autoplay" class="switch" role="switch" aria-checked="true" aria-label="Autoplay"><span></span></button>
+    </div>
+    <div class="screen-links"><a href="../audio-settings/index.html">Audio Settings</a></div>
+    <nav class="navigation" aria-label="Main navigation">
+      <a class="nav-link" href="../index.html">Home</a>
+      <a class="nav-link" href="../playlist.html" aria-current="location">Playlist</a>
+      <a class="nav-link" href="../library/index.html">Library</a>
+    </nav>
+    <div class="home-indicator" aria-hidden="true"></div>
+    <p class="sr-only" role="status" id="status"></p>
+    <div class="toast" id="toast" hidden></div>
+  </main>
+</body>
+</html>

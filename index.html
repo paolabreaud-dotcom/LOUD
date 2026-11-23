@@ -3,75 +3,73 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#030713">
-  <title>LOUD — Monthly Mix</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+  <meta name="theme-color" content="#070d1f">
+  <title>LOUD — Your Sound, Today</title>
+  <link rel="stylesheet" href="home/style.css">
+  <script src="home/script.js" defer></script>
+  <link rel="stylesheet" href="navigation.css">
 </head>
 <body>
-  <main class="mix-page">
-    <img class="mix-aura" src="assets/imgFxGradientLuminousAura1.svg" alt="">
+  <main class="home">
     <header class="intro">
-      <div class="brand-rule" aria-hidden="true"><span></span></div>
-      <p class="eyebrow">LOUD / MONTHLY REPLAY</p>
-      <h1>Your Mix.</h1>
-      <p class="subtitle">The songs that shaped November.</p>
+      <div class="brand-rule" aria-hidden="true"></div>
+      <p class="eyebrow">LOUD / HOME</p>
+      <h1>Your sound, today.</h1>
+      <p class="subtitle">Back to the music that feels like you.</p>
     </header>
 
-    <section class="cover" aria-label="November monthly mix artwork">
-      <img class="cover-aura" src="assets/imgFxGradientLuminousAura.svg" alt="">
-      <div class="orbits" aria-hidden="true"><img src="assets/imgArtFrequencyOrbit0.svg" alt=""><img src="assets/imgArtFrequencyOrbit1.svg" alt=""><img src="assets/imgArtFrequencyOrbit2.svg" alt=""><img src="assets/imgArtFrequencyOrbit3.svg" alt=""></div>
-      <span class="cover-logo">LOUD</span>
-      <div class="cover-caption">
-        <p class="cover-date">11 / 26</p>
-        <p class="cover-subtitle">THE MONTHLY MIX</p>
+    <section class="resume" aria-labelledby="track-title">
+      <img class="portrait" src="home/assets/post-malone.png" alt="">
+      <div class="halo" aria-hidden="true"></div>
+      <div class="orbits" aria-hidden="true">
+        <img src="home/assets/orbit-1.svg" width="114" height="114" alt="">
+        <img src="home/assets/orbit-2.svg" width="156" height="156" alt="">
+        <img src="home/assets/orbit-3.svg" width="198" height="198" alt="">
+        <img src="home/assets/orbit-4.svg" width="240" height="240" alt="">
+      </div>
+      <div class="shade" aria-hidden="true"></div>
+      <p class="eyebrow resume-label">Pick up where you left off</p>
+      <div class="track-meta">
+        <h2 id="track-title">Chemical</h2>
+        <p>Post Malone</p>
+      </div>
+      <a class="play" href="https://open.spotify.com/search/Chemical%20Post%20Malone"
+         target="_blank" rel="noopener" aria-label="Open Chemical by Post Malone in Spotify (new tab)">
+        <img src="home/assets/play-disc.svg" width="49" height="49" alt="">
+        <img src="home/assets/play.svg" width="24" height="24" alt="">
+      </a>
+      <p class="visually-hidden" id="play-status" role="status"></p>
+    </section>
+
+    <section class="recommendations" aria-labelledby="recommendations-title">
+      <h2 class="eyebrow" id="recommendations-title">Made for you</h2>
+      <div class="cards">
+        <a class="card" href="playlist.html">
+          <img class="card-cover" src="home/assets/november-mix.png" alt="">
+          <span class="card-shade" aria-hidden="true"></span>
+          <span class="card-meta">
+            <span class="eyebrow">LOUD REPLAY</span>
+            <strong>November Mix</strong>
+          </span>
+          <img class="card-arrow" src="home/assets/open.svg" width="15" height="15" alt="">
+        </a>
+        <a class="card" href="artist.html">
+          <img class="card-cover" src="home/assets/artist-spotlight.png" alt="">
+          <span class="card-shade" aria-hidden="true"></span>
+          <span class="card-meta">
+            <span class="eyebrow">LOUD DNA</span>
+            <strong>Your #1 Artist</strong>
+          </span>
+          <img class="card-arrow" src="home/assets/open.svg" width="15" height="15" alt="">
+        </a>
       </div>
     </section>
 
-    <section class="tracks" aria-labelledby="tracks-heading">
-      <h2 id="tracks-heading">Your top tracks</h2>
-      <ol class="track-list">
-        <li class="track">
-          <button class="track-button" type="button" aria-pressed="false" aria-label="Select Chemical by Post Malone">
-            <span class="track-art" aria-hidden="true"><img src="assets/imgTrackCover1.png" alt=""></span>
-            <span class="track-copy"><span class="track-title">Chemical</span><span class="track-artist">Post Malone</span></span>
-            <span class="track-number">01</span>
-          </button>
-          <button class="more-button" type="button" aria-label="More options for Chemical">···</button>
-        </li>
-        <li class="track">
-          <button class="track-button" type="button" aria-pressed="false" aria-label="Select Save Your Tears by The Weeknd">
-            <span class="track-art" aria-hidden="true"><img src="assets/imgTrackCover2.png" alt=""></span>
-            <span class="track-copy"><span class="track-title">Save Your Tears</span><span class="track-artist">The Weeknd</span></span>
-            <span class="track-number">02</span>
-          </button>
-          <button class="more-button" type="button" aria-label="More options for Save Your Tears">···</button>
-        </li>
-        <li class="track">
-          <button class="track-button" type="button" aria-pressed="false" aria-label="Select Cartier Santos by SDM">
-            <span class="track-art" aria-hidden="true"><img src="assets/imgTrackCover3.png" alt=""></span>
-            <span class="track-copy"><span class="track-title">Cartier Santos</span><span class="track-artist">SDM</span></span>
-            <span class="track-number">03</span>
-          </button>
-          <button class="more-button" type="button" aria-label="More options for Cartier Santos">···</button>
-        </li>
-        <li class="track">
-          <button class="track-button" type="button" aria-pressed="false" aria-label="Select Lover Girl by Megan Thee Stallion">
-            <span class="track-art" aria-hidden="true"><img src="assets/imgTrackCover4.png" alt=""></span>
-            <span class="track-copy"><span class="track-title">Lover Girl</span><span class="track-artist">Megan Thee Stallion</span></span>
-            <span class="track-number">04</span>
-          </button>
-          <button class="more-button" type="button" aria-label="More options for Lover Girl">···</button>
-        </li>
-      </ol>
-    </section>
-
-    <nav class="bottom-nav" aria-label="Main navigation">
-      <a class="nav-link" href="artist.html">Home</a>
-      <a class="nav-link" href="index.html" aria-current="page">Playlist</a>
-      <a class="nav-link" href="deep-cuts.html">Library</a>
+    <nav class="navigation" aria-label="Main navigation">
+      <a class="nav-link" href="index.html" aria-current="page">Home</a>
+      <a class="nav-link" href="playlist.html">Playlist</a>
+      <a class="nav-link" href="library/index.html">Library</a>
     </nav>
-    <p class="status-message" aria-live="polite"></p>
   </main>
 </body>
 </html>
